@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "repolens"
+version = "0.1.0"
+description = "RAG-powered CLI for asking questions about a codebase, with file and line citations."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["typer>=0.12"]
+
+[project.scripts]
+repolens = "repolens.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/repolens"]
