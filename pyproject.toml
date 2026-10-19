@@ -15,3 +15,6 @@ repolens = "repolens.cli:app"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/repolens"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
