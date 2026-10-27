@@ -13,6 +13,7 @@ dependencies = [
     "tree-sitter>=0.23",
     "tree-sitter-python>=0.23",
     "pymongo>=4.7",
+    "fastembed>=0.4",
 ]
 
 [project.scripts]
